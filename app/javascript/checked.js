@@ -14,7 +14,11 @@ function check() {
       XHR.onload = () => {
         if (XHR.status != 200) {
           alert(`Error ${XHR.status}: ${XHR.statusText}`);
+<<<<<<< Updated upstream
           return null;
+=======
+          return null;          
+>>>>>>> Stashed changes
         }
         const item = XHR.response.post;
         if (item.checked === true) {
